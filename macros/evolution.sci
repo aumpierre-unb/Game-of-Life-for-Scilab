@@ -93,9 +93,13 @@ function [B,n]=evolution(A,N,cyc,fig)
             printf('Not stable after %d itarations.\n',n)
         end
         if start && fig
-            scf(1)
-            clf(1)
-            scf(1).color_map=graycolormap(2)
+            if winsid()==[]
+                scf(0)
+            else
+                scf(max(winsid())+1)
+            end
+            clf()
+            scf().color_map=graycolormap(2)
             subplot(121)
             Matplot(A*100)
             gca().box='on'
