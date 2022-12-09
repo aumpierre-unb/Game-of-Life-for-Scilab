@@ -1,17 +1,14 @@
 // Copyright (C) 2022 Alexandre Umpierre
-
-// This file is part of Game of Life Package for Scilab.
-// Game of Life Package for Scilab is free software:
+// This file is part of game-of-life Package for Scilab.
+// game-of-life Package for Scilab is free software:
 // you can redistribute it and/or modify it under the terms
 // of the GNU General Public License (GPL) version 3
 // as published by the Free Software Foundation.
-
-// Game of Life Package for Scilab is distributed in the hope
+// game-of-life Package for Scilab is distributed in the hope
 // that it will be useful, but WITHOUT ANY WARRANTY;
 // without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 // See the GNU General Public License for more details.
-
 // You should have received a copy of the
 // GNU General Public License along with this program.
 // It is also available at www.gnu.org/licenses/.
@@ -40,7 +37,7 @@ function [A]=genzero(m,n,P)
     //  matrix is generated with the pattern at
     //  its superior left corner.
     // genzero is a main function of
-    //  the Game of Life Package for Scilab.
+    //  the game-of-life Package for Scilab.
     //
     // Examples
     // ..// Generate a spaceship glider pattern

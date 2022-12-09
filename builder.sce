@@ -14,4 +14,10 @@
 // It is also available at www.gnu.org/licenses/.
 
 path=get_absolute_file_path();
-tbx_build_macros("game-of-life",path);
+tbx_builder_macros(path);
+tbx_builder_src(path);
+tbx_builder_gateway(path);
+tbx_build_localization(path);
+tbx_builder_help(path);
+tbx_build_loader(path);
+tbx_build_cleaner(path);

@@ -14,4 +14,16 @@
 // It is also available at www.gnu.org/licenses/.
 
 path=get_absolute_file_path();
-tbx_build_macros("game-of-life",path);
+path=strncpy(path,length(path)-length("etc\"));
+genlib("game-of-life",path+"macros");
+
+//chdir(path+'macros');
+//help_from_sci(path+'macros',path+'help');
+
+chdir(path)
+newdir="jar"
+mkdir(newdir)
+jcreatejar(path+newdir+"\scilab_en_US_help.jar",..
+           path+"help")
+
+add_help_chapter("Conway's Game of Life",path+newdir)
