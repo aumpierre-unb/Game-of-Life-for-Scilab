@@ -13,7 +13,7 @@
 3\. To install and load the toolbox, type:
 
 ```dotnetcli
-atomsInstall('v0.1.0.zip')
+atomsInstall('v0.1.0.zip'),..
 atomsLoad('conway')
 ```
 
