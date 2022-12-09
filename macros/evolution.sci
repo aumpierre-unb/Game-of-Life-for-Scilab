@@ -94,12 +94,11 @@ function [B,n]=evolution(A,N,cyc,fig)
         end
         if start && fig
             if winsid()==[]
-                scf(0)
+                m=0
             else
-                scf(max(winsid())+1)
+                m=max(winsid())+1
             end
-            clf()
-            scf().color_map=graycolormap(2)
+            scf(m).color_map=graycolormap(2)
             subplot(121)
             Matplot(A*100)
             gca().box='on'

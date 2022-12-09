@@ -101,12 +101,11 @@ function [B]=conway(A,cyc,fig)
     B=B(2:$-1,2:$-1)
     if fig
         if winsid()==[]
-            scf(0)
+            m=0
         else
-            scf(max(winsid())+1)
+            m=max(winsid())+1
         end
-        clf()
-        scf().color_map=graycolormap(2)
+        scf(m).color_map=graycolormap(2)
         subplot(121)
         Matplot(A*100)
         gca().box='on'
