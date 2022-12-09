@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from conway.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="conway" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>conway</refname>
+    <refpurpose>Compute the next generation of a given grid</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Syntax</title>
+   <synopsis>
+   [B]=conway(A,cyc,fig)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>A:</term>
+            <listitem><para> matrix with configuration of the original grid</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>cyc:</term>
+            <listitem><para> %t for infinite periodic arrangement or %f for finite grid</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>fig:</term>
+            <listitem><para> %t for diplaying plot</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>B:</term>
+            <listitem><para> matrix with configuration of the next generation</para></listitem>
+        </varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+conway computes
+the configuration of
+the next generation of
+a grid of square cells,
+each of which is in either live or dead.
+Each cell will be live or dead
+in the next generation according to
+the rules of the Conway's game of life:
+1) A live cells with exactly 2 or 3 live neighbors
+stays a live cell, otherwise it dies.
+2) A dead cell with 3 live neighbors
+becomes alive, otherwise is stays dead.
+By default, the grid is assumed to be finite.
+If cyc=%t is given, then grid is assumed to be infinite and periodic.
+By default, no plot is shown.
+If fig=%t is given, then
+a figure with two subplots is shown,
+the first subplot being
+the configuration of the original grid and
+the second subplot being
+the configuration of the next generations.
+conway is a main function of
+the Game of Life Package for Scilab.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+..// Compute the next generation
+..// of a spaceship glider pattern
+..// in a 10 by 10 cells grid and
+..// visualize the grids on plots.
+..//
+A=genzero(10,10,'glider');..
+B=conway(A,true,true)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection role="see also">
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="genzero">genzero</link></member>
+   <member><link linkend="evolution">evolution</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Alexandre Umpierre</member>
+   </simplelist>
+</refsection>
+</refentry>

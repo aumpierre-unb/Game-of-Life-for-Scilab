@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+ *
+ * This help file was generated from evolution.sci using help_from_sci().
+ *
+ -->
+
+<refentry version="5.0-subset Scilab" xml:id="evolution" xml:lang="en"
+          xmlns="http://docbook.org/ns/docbook"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svg="http://www.w3.org/2000/svg"
+          xmlns:ns3="http://www.w3.org/1999/xhtml"
+          xmlns:mml="http://www.w3.org/1998/Math/MathML"
+          xmlns:scilab="http://www.scilab.org"
+          xmlns:db="http://docbook.org/ns/docbook">
+
+  <refnamediv>
+    <refname>evolution</refname>
+    <refpurpose>Computes the evolution of a given grid according to the rules of the Conway's game of life</refpurpose>
+  </refnamediv>
+
+
+<refsynopsisdiv>
+   <title>Syntax</title>
+   <synopsis>
+   [B,n]=evolution(A,N,cyc,fig)
+   
+   </synopsis>
+</refsynopsisdiv>
+
+<refsection>
+   <title>Parameters</title>
+   <variablelist>
+        <varlistentry>
+            <term>A:</term>
+            <listitem><para> matrix with configuration of the original grid</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>N:</term>
+            <listitem><para> maximum number of generations to be computed</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>cyc:</term>
+            <listitem><para> %t for infinite periodic arrangement or %f for finite grid</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>fig:</term>
+            <listitem><para> %t for diplaying plot</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>B:</term>
+            <listitem><para> matrix with the final configuration of the grid</para></listitem>
+        </varlistentry>
+        <varlistentry>
+            <term>n:</term>
+            <listitem><para> number of generations computed</para></listitem>
+        </varlistentry>
+   </variablelist>
+</refsection>
+
+<refsection>
+   <title>Description</title>
+   <para>
+evolution computes the evolution of
+a grid of square cells
+according to the rules of
+the Conway's game of life.
+The simulations will be interrupted
+if the grid comes to
+a stable configuration (including death).
+evolution is a main function of
+the Game of Life Package for Scilab.
+   </para>
+   <para>
+</para>
+</refsection>
+
+<refsection>
+   <title>Examples</title>
+   <programlisting role="example"><![CDATA[
+..// Observe the evolution of
+..// the first 200 generations of
+..// a grid originally set as
+..// a spaceship glider pattern in
+..// a periodic 13 by 11 cells grid.
+..//
+A=genzero(27,28,.26);..
+B=evolution(A,inf,true)
+
+..// Generate a periodic 27 by 28 cells grid
+..// where individual cells have a 26:74 chance
+..// to be live or dead and
+..// observe its evolution.
+A=genzero(27,28,.26);..
+B=evolution(A,inf,true)
+
+   ]]></programlisting>
+</refsection>
+
+<refsection role="see also">
+   <title>See also</title>
+   <simplelist type="inline">
+   <member><link linkend="genzero">genzero</link></member>
+   <member><link linkend="conway">conway</link></member>
+   </simplelist>
+</refsection>
+
+<refsection>
+   <title>Authors</title>
+   <simplelist type="vert">
+   <member>Alexandre Umpierre</member>
+   </simplelist>
+</refsection>
+</refentry>
