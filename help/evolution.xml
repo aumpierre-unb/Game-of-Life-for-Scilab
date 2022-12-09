@@ -70,7 +70,7 @@ The simulations will be interrupted
 if the grid comes to
 a stable configuration (including death).
 evolution is a main function of
-the Game of Life Package for Scilab.
+the game_of_life package for Scilab.
    </para>
    <para>
 </para>

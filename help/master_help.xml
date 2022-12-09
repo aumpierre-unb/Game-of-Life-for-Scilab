@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE book [
 <!--Begin Entities-->
-<!ENTITY abeb979c907683dd3ced4e55e02b11336 SYSTEM "file:///D:/UnB/programacao/scilab/conway/help/concat.xml">
-<!ENTITY a91329a55936263fbd59332d2b4b22ffc SYSTEM "file:///D:/UnB/programacao/scilab/conway/help/conway.xml">
-<!ENTITY ab6863f06f1f987438cf98836bf60e521 SYSTEM "file:///D:/UnB/programacao/scilab/conway/help/evolution.xml">
-<!ENTITY a54fd37f7b52d6829e428e1677f5dc8df SYSTEM "file:///D:/UnB/programacao/scilab/conway/help/genzero.xml">
+<!ENTITY a772d49b05d3a8ee3002ef707ed7f2c14 SYSTEM "file:///D:/UnB/programacao/github/game_of_life-for-Scilab/help/concat.xml">
+<!ENTITY aa42bfc097d772848eea2c31ae8d6fba1 SYSTEM "file:///D:/UnB/programacao/github/game_of_life-for-Scilab/help/conway.xml">
+<!ENTITY aeb7e257b8b34c2ff08fe53efbb1613ee SYSTEM "file:///D:/UnB/programacao/github/game_of_life-for-Scilab/help/evolution.xml">
+<!ENTITY ac00a467069ad37163799a3a511037031 SYSTEM "file:///D:/UnB/programacao/github/game_of_life-for-Scilab/help/genzero.xml">
 <!--End Entities-->
 ]>
 <book version="5.0-subset Scilab" xml:lang="en_US"
@@ -19,11 +19,11 @@
     <title>Conway's Game of Life</title>
   </info>
 
-<part xml:id='section_5b53dc88a30c32fc5ee55358f58e3489'>
+<part xml:id='section_4193f95605e5652ef30dc18f4efa9dbf'>
 <title>Conway's Game of Life</title>
-&abeb979c907683dd3ced4e55e02b11336;
-&a91329a55936263fbd59332d2b4b22ffc;
-&ab6863f06f1f987438cf98836bf60e521;
-&a54fd37f7b52d6829e428e1677f5dc8df;
+&a772d49b05d3a8ee3002ef707ed7f2c14;
+&aa42bfc097d772848eea2c31ae8d6fba1;
+&aeb7e257b8b34c2ff08fe53efbb1613ee;
+&ac00a467069ad37163799a3a511037031;
 </part>
 </book>

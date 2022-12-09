@@ -1,4 +1,4 @@
-Toolbox: game-of-life
+Toolbox: game_of_life
 
 Title: Conway's Game of Life for Scilab
 
@@ -14,7 +14,7 @@ Category: Education
 
 Entity: 
 
-WebSite: https://github.com/aumpierre-unb/Game-of-Life-for-Scilab
+WebSite: https://github.com/aumpierre-unb/game_of_life-for-Scilab
 
 License: GPL 3.0
 

@@ -65,7 +65,7 @@ If the grid pattern is assingned by strings
 matrix is generated with the pattern at
 its superior left corner.
 genzero is a main function of
-the Game of Life Package for Scilab.
+the game_of_life package for Scilab.
    </para>
    <para>
 </para>

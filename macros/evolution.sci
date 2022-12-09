@@ -1,10 +1,10 @@
 // Copyright (C) 2022 Alexandre Umpierre
-// This file is part of game-of-life Package for Scilab.
-// game-of-life Package for Scilab is free software:
+// This file is part of game_of_life Package for Scilab.
+// game_of_life Package for Scilab is free software:
 // you can redistribute it and/or modify it under the terms
 // of the GNU General Public License (GPL) version 3
 // as published by the Free Software Foundation.
-// game-of-life Package for Scilab is distributed in the hope
+// game_of_life Package for Scilab is distributed in the hope
 // that it will be useful, but WITHOUT ANY WARRANTY;
 // without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
@@ -36,7 +36,7 @@ function [B,n]=evolution(A,N,cyc,fig)
     //  if the grid comes to
     //  a stable configuration (including death).
     // evolution is a main function of
-    //  the Game of Life Package for Scilab.
+    //  the game_of_life package for Scilab.
     //
     // Examples
     // ..// Observe the evolution of

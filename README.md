@@ -2,7 +2,7 @@
 
 <!-- [![DOI](https://zenodo.org/badge/509430202.svg)](https://zenodo.org/badge/latestdoi/509430202)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/aumpierre-unb/Game-of-Life-for-Scilab) -->
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/aumpierre-unb/game_of_life-for-Scilab) -->
 
 ## Install and load Internal Fluid Flow Toolbox for Scilab
 
@@ -28,9 +28,9 @@ Conway's Game of Life computes the configuration of the next generation of a gri
 
 As simple as these rules may be, they can result in surprising complexity from relatively simple initial configurations.
 
-## The `game-of-life` Package
+## The `game_of_life` Package
 
-`game-of-life` provides the following functions:
+`game_of_life` provides the following functions:
 
 - `genzero`
 - `conway`

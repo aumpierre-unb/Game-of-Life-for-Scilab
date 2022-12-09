@@ -76,7 +76,7 @@ the configuration of the original grid and
 the second subplot being
 the configuration of the next generations.
 conway is a main function of
-the Game of Life Package for Scilab.
+the game_of_life package for Scilab.
    </para>
    <para>
 </para>

@@ -54,7 +54,7 @@ concat produces the
 horiziontal and vertical concatenation
 of matrices M and N.
 concat is an internal function of
-the Game of Life Package for Scilab.
+the Game of Life package for Scilab.
    </para>
    <para>
 </para>
