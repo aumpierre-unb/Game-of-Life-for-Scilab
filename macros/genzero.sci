@@ -40,14 +40,14 @@ function [A]=genzero(m,n,P)
     //  the game_of_life package for Scilab.
     //
     // Examples
-    // ..// Generate a spaceship glider pattern
-    // ..// in a 9 lines and 7 columns matrix.
-    // ..//
+    // // Generate a spaceship glider pattern
+    // // in a 9 lines and 7 columns matrix.
+    // //
     // A=genzero(9,7,'glider')
     //
-    // ..// Generate a 27 by 28 cells grid
-    // ..// where individual cells have a 26:74 chance
-    // ..// to be live or dead.
+    // // Generate a 27 by 28 cells grid
+    // // where individual cells have a 26:74 chance
+    // // to be live or dead.
     // A=genzero(27,28,.26)
     //
     // See also

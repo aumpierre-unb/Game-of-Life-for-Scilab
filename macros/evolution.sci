@@ -39,21 +39,21 @@ function [B,n]=evolution(A,N,cyc,fig)
     //  the game_of_life package for Scilab.
     //
     // Examples
-    // ..// Observe the evolution of
-    // ..// the first 200 generations of
-    // ..// a grid originally set as
-    // ..// a spaceship glider pattern in
-    // ..// a periodic 13 by 11 cells grid.
-    // ..//
+    // // Observe the evolution of
+    // // the first 200 generations of
+    // // a grid originally set as
+    // // a spaceship glider pattern in
+    // // a periodic 13 by 11 cells grid.
+    // //
     // A=genzero(27,28,.26);..
-    // B=evolution(A,inf,true)
+    // B=evolution(A,200,%t,%t);
     //
-    // ..// Generate a periodic 27 by 28 cells grid
-    // ..// where individual cells have a 26:74 chance
-    // ..// to be live or dead and
-    // ..// observe its evolution.
+    // // Generate a periodic 27 by 28 cells grid
+    // // where individual cells have a 26:74 chance
+    // // to be live or dead and
+    // // observe its evolution.
     // A=genzero(27,28,.26);..
-    // B=evolution(A,inf,true)
+    // B=evolution(A,%inf,%t,%t);
     //
     // See also
     //  genzero

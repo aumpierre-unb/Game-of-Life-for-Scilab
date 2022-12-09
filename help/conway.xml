@@ -85,13 +85,13 @@ the game_of_life package for Scilab.
 <refsection>
    <title>Examples</title>
    <programlisting role="example"><![CDATA[
-..// Compute the next generation
-..// of a spaceship glider pattern
-..// in a 10 by 10 cells grid and
-..// visualize the grids on plots.
-..//
+// Compute the next generation
+// of a spaceship glider pattern
+// in a 10 by 10 cells grid and
+// visualize the grids on plots.
+//
 A=genzero(10,10,'glider');..
-B=conway(A,true,true)
+B=conway(A,%t,%t);
 
    ]]></programlisting>
 </refsection>

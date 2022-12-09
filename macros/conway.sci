@@ -51,13 +51,13 @@ function [B]=conway(A,cyc,fig)
     //  the game_of_life package for Scilab.
     //
     // Examples
-    // ..// Compute the next generation
-    // ..// of a spaceship glider pattern
-    // ..// in a 10 by 10 cells grid and
-    // ..// visualize the grids on plots.
-    // ..//
+    // // Compute the next generation
+    // // of a spaceship glider pattern
+    // // in a 10 by 10 cells grid and
+    // // visualize the grids on plots.
+    // //
     // A=genzero(10,10,'glider');..
-    // B=conway(A,true,true)
+    // B=conway(A,%t,%t);
     //
     // See also
     //  genzero

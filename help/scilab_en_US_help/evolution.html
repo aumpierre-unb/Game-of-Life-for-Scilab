@@ -16,7 +16,7 @@
 
       </td>
       <td width="40%" class="center">
-      	<span class="top"><a href="section_4193f95605e5652ef30dc18f4efa9dbf.html">Conway&#0039;s Game of Life</a></span>
+      	<span class="top"><a href="section_4193f95605e5652ef30dc18f4efa9dbf.html">Game of Life of Conway</a></span>
 
       </td>
       <td width="30%" class="next">
@@ -29,7 +29,7 @@
 
 
 
-    <span class="path" dir="ltr"><a href="index.html">Conway&#0039;s Game of Life</a> &gt;&gt; <a href="section_4193f95605e5652ef30dc18f4efa9dbf.html">Conway&#0039;s Game of Life</a> &gt; evolution</span>
+    <span class="path" dir="ltr"><a href="index.html">Game of Life of Conway</a> &gt;&gt; <a href="section_4193f95605e5652ef30dc18f4efa9dbf.html">Game of Life of Conway</a> &gt; evolution</span>
 
     <br /><br />
     <div class="refnamediv"><h1 class="refname">evolution</h1>
@@ -66,21 +66,21 @@ the game_of_life package for Scilab.</p>
    <p class="para"></p></div>
 
 <div class="refsection"><h3 class="title">Examples</h3>
-   <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabspecial">..</span><span class="scilabcomment">// Observe the evolution of</span>
-<span class="scilabspecial">..</span><span class="scilabcomment">// the first 200 generations of</span>
-<span class="scilabspecial">..</span><span class="scilabcomment">// a grid originally set as</span>
-<span class="scilabspecial">..</span><span class="scilabcomment">// a spaceship glider pattern in</span>
-<span class="scilabspecial">..</span><span class="scilabcomment">// a periodic 13 by 11 cells grid.</span>
-<span class="scilabspecial">..</span><span class="scilabcomment">//</span>
+   <div class="programlisting"><table border="0" width="100%"><tr><td width="98%"><pre class="scilabcode"><span class="scilabcomment">// Observe the evolution of</span>
+<span class="scilabcomment">// the first 200 generations of</span>
+<span class="scilabcomment">// a grid originally set as</span>
+<span class="scilabcomment">// a spaceship glider pattern in</span>
+<span class="scilabcomment">// a periodic 13 by 11 cells grid.</span>
+<span class="scilabcomment">//</span>
 <span class="scilabid">A</span><span class="scilaboperator">=</span><span class="scilabid">genzero</span><span class="scilabopenclose">(</span><span class="scilabnumber">27</span><span class="scilabdefault">,</span><span class="scilabnumber">28</span><span class="scilabdefault">,</span><span class="scilabnumber">.26</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span><span class="scilabspecial">..</span>
-<span class="scilabid">B</span><span class="scilaboperator">=</span><span class="scilabid">evolution</span><span class="scilabopenclose">(</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">inf</span><span class="scilabdefault">,</span><span class="scilabid">true</span><span class="scilabopenclose">)</span>
+<span class="scilabid">B</span><span class="scilaboperator">=</span><span class="scilabid">evolution</span><span class="scilabopenclose">(</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabnumber">200</span><span class="scilabdefault">,</span><span class="scilabconstants">%t</span><span class="scilabdefault">,</span><span class="scilabconstants">%t</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span>
 
-<span class="scilabspecial">..</span><span class="scilabcomment">// Generate a periodic 27 by 28 cells grid</span>
-<span class="scilabspecial">..</span><span class="scilabcomment">// where individual cells have a 26:74 chance</span>
-<span class="scilabspecial">..</span><span class="scilabcomment">// to be live or dead and</span>
-<span class="scilabspecial">..</span><span class="scilabcomment">// observe its evolution.</span>
+<span class="scilabcomment">// Generate a periodic 27 by 28 cells grid</span>
+<span class="scilabcomment">// where individual cells have a 26:74 chance</span>
+<span class="scilabcomment">// to be live or dead and</span>
+<span class="scilabcomment">// observe its evolution.</span>
 <span class="scilabid">A</span><span class="scilaboperator">=</span><span class="scilabid">genzero</span><span class="scilabopenclose">(</span><span class="scilabnumber">27</span><span class="scilabdefault">,</span><span class="scilabnumber">28</span><span class="scilabdefault">,</span><span class="scilabnumber">.26</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span><span class="scilabspecial">..</span>
-<span class="scilabid">B</span><span class="scilaboperator">=</span><span class="scilabid">evolution</span><span class="scilabopenclose">(</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabid">inf</span><span class="scilabdefault">,</span><span class="scilabid">true</span><span class="scilabopenclose">)</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
+<span class="scilabid">B</span><span class="scilaboperator">=</span><span class="scilabid">evolution</span><span class="scilabopenclose">(</span><span class="scilabid">A</span><span class="scilabdefault">,</span><span class="scilabconstants">%inf</span><span class="scilabdefault">,</span><span class="scilabconstants">%t</span><span class="scilabdefault">,</span><span class="scilabconstants">%t</span><span class="scilabopenclose">)</span><span class="scilabdefault">;</span></pre></td><td valign="top"><a href="scilab://scilab.execexample/"><img src="ScilabExecute.png" border="0"/></a></td><td valign="top"><a href="scilab://scilab.editexample/"><img src="ScilabEdit.png" border="0"/></a></td><td></td></tr></table></div></div>
 
 <div class="refsection"><h3 class="title">See also</h3>
    <ul class="itemizedlist"><li class="member"><a href="genzero.html" class="link">genzero</a> &#8212; Generates a matrix of ones and zeros</li>
@@ -99,7 +99,7 @@ the game_of_life package for Scilab.</p>
 
       </td>
       <td width="40%" class="center">
-      	<span class="top"><a href="section_4193f95605e5652ef30dc18f4efa9dbf.html">Conway&#0039;s Game of Life</a></span>
+      	<span class="top"><a href="section_4193f95605e5652ef30dc18f4efa9dbf.html">Game of Life of Conway</a></span>
 
       </td>
       <td width="30%" class="next">
