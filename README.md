@@ -6,14 +6,14 @@
 
 ## Install and load `game_of_life` package for Scilab
 
-1\. Download `v0.1.0.zip` file from the current release page.
+1\. Download `v0.1.1.zip` file from the current release page.
 
 2\. Set Scilab current directory to the download folder.
 
-3\. To install and load `v0.1.0.zip` type:
+3\. To install and load `v0.1.1.zip` type:
 
 ```dotnetcli
-atomsInstall('v0.1.0.zip'),..
+atomsInstall('v0.1.1.zip'),..
 atomsLoad('conway')
 ```
 

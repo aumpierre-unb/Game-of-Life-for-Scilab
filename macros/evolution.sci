@@ -79,7 +79,6 @@ function [B,n]=evolution(A,N,cyc,fig)
         n=n+1
         for i=1:m
             if and(and(B==C{i}))
-                printf('Stability after %d itarations with period %d.\n',n-1,m-i+1)
                 delete()
                 subplot(122)
                 Matplot(B*100)
@@ -89,6 +88,7 @@ function [B,n]=evolution(A,N,cyc,fig)
                 gca().axes_visible='off'
                 gca().isoview='on'
                 sleep(30)
+                printf('Stability after %d itarations with period %d.\n',n-1,m-i+1)
                 return
             end
         end

@@ -4,7 +4,7 @@ Title: Conway's Game of Life for Scilab
 
 Summary: A package of functions for the Conway's game of life
 
-Version: 0.1.0
+Version: 0.1.1
 
 Author: Alexandre Umpierre
 
@@ -22,7 +22,7 @@ ScilabVersion: >= 6.0
 
 Depends: 
 
-Date: 2022-12-09
+Date: 2022-12-10
 
 Description: This package provides a set of functions to
  compute and visualize the Conway's game of life.
