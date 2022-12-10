@@ -1,6 +1,6 @@
 # Conway's Game of Life
 
-[![DOI](https://zenodo.org/badge/509430202.svg)](https://zenodo.org/badge/576362494.svg)](https://zenodo.org/badge/latestdoi/576362494)
+[![DOI](https://zenodo.org/badge/576362494.svg)](https://zenodo.org/badge/latestdoi/576362494)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/aumpierre-unb/Game-of-Life-for-Scilab)
 
