@@ -10,7 +10,7 @@
 
 2\. Set Scilab current directory to the download folder.
 
-3\. To install and load the toolbox, type:
+3\. To install and load the package, type:
 
 ```dotnetcli
 atomsInstall('v0.1.0.zip'),..
@@ -47,7 +47,7 @@ If the grid pattern is assingned by strings 'block', 'glider', 'blinker', 'toad'
 **Syntax:**
 
 ```dotnetcli
-[A]=genzero(m,n[,P=.5])
+[A]=genzero(m,n,P)
 ```
 
 **Examples:**
@@ -99,7 +99,7 @@ The computation will be interrupted if the grid comes to a stable configuration 
 **Syntax:**
 
 ```dotnetcli
-[B]=evolution(A,N=100,cyc=false,fig=true,map='gray',s=50)
+[B]=evolution(A,N,cyc,fig,map,s)
 ```
 
 **Examples:**
