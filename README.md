@@ -99,7 +99,7 @@ The computation will be interrupted if the grid comes to a stable configuration 
 **Syntax:**
 
 ```dotnetcli
-[B]=evolution(A,N,cyc,fig,map,s)
+[B]=evolution(A,N,cyc,fig)
 ```
 
 **Examples:**
@@ -108,14 +108,14 @@ Observe the evolution of the first 200 generations of a grid originally set as a
 
 ```dotnetcli
 A=genzero(13,11,'glider');..
-B=evolution(A,200,%t)
+B=evolution(A,200,%t,%t)
 ```
 
 Generate a periodic 27 by 28 cells grid where individual cells have a 26:74 chance to be live or dead and observe its evolution.
 
 ```dotnetcli
 A=genzero(27,28,.26);..
-B=evolution(A,%inf,%t)
+B=evolution(A,%inf,%t,%t)
 ```
 
 Copyright &copy; 2022 Alexandre Umpierre
