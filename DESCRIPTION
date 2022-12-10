@@ -24,4 +24,6 @@ Depends:
 
 Date: 2022-12-09
 
-Description: This package provides a set of functions to compute and visualize the Conway's game of life. Enjoy!
+Description: This package provides a set of functions to
+ compute and visualize the Conway's game of life.
+ Enjoy!
