@@ -10,7 +10,7 @@
 
 2\. Set Scilab current directory to the download folder.
 
-3\. To install and load the package, type:
+3\. To install and load `v0.1.0.zip` type:
 
 ```dotnetcli
 atomsInstall('v0.1.0.zip'),..
