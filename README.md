@@ -1,12 +1,12 @@
-# Internal Fluid Flow
+# Conway's Game of Life
 
 <!-- [![DOI](https://zenodo.org/badge/509430202.svg)](https://zenodo.org/badge/latestdoi/509430202)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/aumpierre-unb/game_of_life-for-Scilab) -->
 
-## Install and load Internal Fluid Flow Toolbox for Scilab
+## Install and load `game_of_life` package for Scilab
 
-1\. Download ```v0.1.0.zip``` file from the current release page.
+1\. Download `v0.1.0.zip` file from the current release page.
 
 2\. Set Scilab current directory to the download folder.
 
@@ -85,7 +85,7 @@ Compute the next generation of a spaceship glider pattern in a 10 by 10 cells gr
 
 ```dotnetcli
 A=genzero(10,10,'glider');..
-B=conway(A,true,true)
+B=conway(A,%t,%t)
 ```
 
 ### `evolution`
@@ -108,14 +108,14 @@ Observe the evolution of the first 200 generations of a grid originally set as a
 
 ```dotnetcli
 A=genzero(13,11,'glider');..
-B=evolution(A,200,true)
+B=evolution(A,200,%t)
 ```
 
 Generate a periodic 27 by 28 cells grid where individual cells have a 26:74 chance to be live or dead and observe its evolution.
 
 ```dotnetcli
 A=genzero(27,28,.26);..
-B=evolution(A,inf,true)
+B=evolution(A,%inf,%t)
 ```
 
 Copyright &copy; 2022 Alexandre Umpierre
