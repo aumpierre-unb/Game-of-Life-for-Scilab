@@ -4,7 +4,7 @@
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/aumpierre-unb/Game-of-Life-for-Scilab)
 
-![Illustrative graphical output](https://github.com/aumpierre-unb/Game-of-Life-for-Scilab/blob/main/docs/window.png "Example of graphical output")
+![Illustrative graphical output](https://github.com/aumpierre-unb/Game-of-Life-for-Scilab/blob/main/docs/window.png "Example of graphic output")
 
 ## Install and load `game_of_life` package for Scilab
 
