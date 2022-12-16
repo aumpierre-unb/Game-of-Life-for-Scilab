@@ -22,8 +22,9 @@ ScilabVersion: >= 6.0
 
 Depends: 
 
-Date: 2022-12-15
+Release Date: 2022-12-15
 
 Description: This package provides a set of functions to
  compute and visualize the Conway's game of life.
+ https://doi.org/10.5281/zenodo.7420301
  Enjoy!
