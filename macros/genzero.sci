@@ -57,10 +57,7 @@ function [A]=genzero(m,n,P)
     // Authors
     //  Alexandre Umpierre
 
-    x=now()*1e4;
-    x=x-floor(x);
-    x=x*1e3;
-    rand('seed',x);
+    rand('seed',getdate()(10))
     if type(P)==1 && 1>P && P>0
         A=(rand(m,n))
         A=round(A)

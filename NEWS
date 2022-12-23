@@ -1,6 +1,10 @@
 TODO
 ====
 
+game_of_life v0.1.3-alpha (2022-12-23)
+=============================
+* Upgraded random function for genzero
+
 game_of_life v0.1.2 (2022-12-15)
 =============================
 * Included seed for rand in genzero
