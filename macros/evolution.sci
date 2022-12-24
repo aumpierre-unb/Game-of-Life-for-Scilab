@@ -97,11 +97,11 @@ function [B,n]=evolution(A,N,cyc,fig)
         end
         if start && fig
             if winsid()==[]
-                m=0
+                k=0
             else
-                m=max(winsid())+1
+                k=max(winsid())+1
             end
-            scf(m).color_map=graycolormap(2)
+            scf(k).color_map=graycolormap(2)
             subplot(121)
             Matplot(A*100)
             gca().box='on'
@@ -121,6 +121,8 @@ function [B,n]=evolution(A,N,cyc,fig)
             gca().y_label.visible='off'
             gca().axes_visible='off'
             gca().isoview='on'
+//            name="foo"+msprintf("%3.d",n)+".gif"
+//            xs2gif(k,name);
             sleep(30)
         end
         A=B
