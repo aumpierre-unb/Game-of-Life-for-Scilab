@@ -34,7 +34,7 @@ function [B,n]=evolution(A,N,cyc,fig)
     //  the Conway's game of life.
     // The simulations will be interrupted
     //  if the grid comes to
-    //  a stable configuration (including death).
+    //  a stable configuration (including death of all cells).
     // evolution is a main function of
     //  the game_of_life package for Scilab.
     //

@@ -54,7 +54,7 @@ As simple as these rules may be, they can result in surprising complexity from r
 
 If probability for live cell if given, the values of individual cells are computed accordingly.
 
-If the grid pattern is assingned by strings 'block', 'glider', 'blinker', 'toad' or 'beacon' matrix is generated with the pattern at its superior left corner.
+If the grid pattern is assigned by strings 'block', 'glider', 'blinker', 'toad' or 'beacon' matrix is generated with the pattern at its superior left corner.
 
 **Syntax:**
 
@@ -104,9 +104,7 @@ B=conway(A,%t,%t)
 
 `evolution` computes the evolution of a grid of square cells according to the rules of the Conway's game of life.
 
-The computation will be interrupted if the grid comes to a stable configuration.
-
-The computation will be interrupted if the grid comes to a stable configuration (including death).
+The computation will be interrupted if the grid comes to a stable configuration (including death of all cells).
 
 **Syntax:**
 
