@@ -104,7 +104,7 @@ B=conway(A,%t,%t)
 
 `evolution` computes the evolution of a grid of square cells according to the rules of the Conway's game of life.
 
-The computation will be interrupted if the grid comes to a stable configuration.By default, 100 generations will be computed.
+The computation will be interrupted if the grid comes to a stable configuration.
 
 The computation will be interrupted if the grid comes to a stable configuration (including death).
 
