@@ -26,8 +26,8 @@ You can cite all versions (both released and pre-released), by using
 
 This DOI represents all versions, and will always resolve to the latest one.
 
-To cite the last released version, please check
-https://zenodo.org/account/settings/github/repository/aumpierre-unb/Game-of-Life-for-Scilab.
+<!--To cite the last released version, please check
+https://zenodo.org/account/settings/github/repository/aumpierre-unb/Game-of-Life-for-Scilab.-->
 
 ---
 
