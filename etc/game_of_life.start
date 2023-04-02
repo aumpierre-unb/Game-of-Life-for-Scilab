@@ -1,4 +1,4 @@
-//  Copyright (C) 2022 2023 Alexandre Umpierre
+// Copyright (C) 2022 2023 Alexandre Umpierre
 // This file is part of game_of_life Package for Scilab.
 // game_of_life Package for Scilab is free software:
 // you can redistribute it and/or modify it under the terms
