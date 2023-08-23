@@ -88,12 +88,12 @@ function [B,n]=evolution(A,N,cyc,fig)
                 gca().axes_visible='off'
                 gca().isoview='on'
                 sleep(30)
-                printf('Stability after %d itarations with period %d.\n',n-1,m-i+1)
+                printf('Stability after %d iterations with period %d.\n',n-1,m-i+1)
                 return
             end
         end
         if n==N
-            printf('Not stable after %d itarations.\n',n)
+            printf('Not stable after %d iterations.\n',n)
         end
         if start && fig
             if winsid()==[]
@@ -102,6 +102,7 @@ function [B,n]=evolution(A,N,cyc,fig)
                 k=max(winsid())+1
             end
             scf(k).color_map=graycolormap(2)
+            drawlater
             subplot(121)
             Matplot(A*100)
             gca().box='on'
@@ -111,16 +112,17 @@ function [B,n]=evolution(A,N,cyc,fig)
             gca().isoview='on'
             start=%f
             subplot(122)
-        end
-        if fig
-            delete()
-            subplot(122)
             Matplot(B*100)
+            hmat=gce();
             gca().box='on'
             gca().x_label.visible='off'
             gca().y_label.visible='off'
             gca().axes_visible='off'
             gca().isoview='on'
+            drawnow
+        end
+        if fig && ~start
+            hmat.data=B*100;
 //            name="foo"+msprintf("%3.d",n)+".gif"
 //            xs2gif(k,name);
             sleep(30)
