@@ -123,8 +123,6 @@ function [B,n]=evolution(A,N,cyc,fig)
         end
         if fig && ~start
             hmat.data=B*100;
-//            name="foo"+msprintf("%3.d",n)+".gif"
-//            xs2gif(k,name);
             sleep(30)
         end
         A=B
