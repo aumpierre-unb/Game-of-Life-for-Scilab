@@ -14,7 +14,7 @@
 // It is also available at www.gnu.org/licenses/.
 
 function [B,n]=evolution(A,N,cyc,fig)
-    // Computes the evolution of a given grid according to the rules of the Conway's game of life
+    // Computes the evolution of a given grid according to the rules of the game of life of Conway
     //
     // Syntax
     // [B,n]=evolution(A,N,cyc,fig)
@@ -31,7 +31,7 @@ function [B,n]=evolution(A,N,cyc,fig)
     // evolution computes the evolution of
     //  a grid of square cells
     //  according to the rules of
-    //  the Conway's game of life.
+    //  the game of life of Conway.
     // The simulations will be interrupted
     //  if the grid comes to
     //  a stable configuration (including death of all cells).

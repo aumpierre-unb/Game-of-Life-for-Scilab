@@ -13,8 +13,13 @@
 // GNU General Public License along with this program.
 // It is also available at www.gnu.org/licenses/.
 
-// buildmacros is part of
+// buildmacros.sce is part of
 // the game_of_life package for Scilab.
 
-path=get_absolute_file_path();
-tbx_build_macros("game_of_life",path);
+function buildmacros()
+    toolbox_name="game_of_life";
+    macros_path=get_absolute_file_path();
+    tbx_build_macros(toolbox_name,macros_path);
+endfunction
+buildmacros();
+clear buildmacros;

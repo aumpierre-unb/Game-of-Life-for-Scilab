@@ -13,8 +13,17 @@
 // GNU General Public License along with this program.
 // It is also available at www.gnu.org/licenses/.
 
-// loader.sce is part of
+// cleanmacros.sce is part of
 // the game_of_life package for Scilab.
 
-toolboxes(SCI+"/contrib");
-clear toolboxes build distrib_clean distrib_zip
+function cleanmacros()
+    libpath=get_absolute_file_path();
+    binfiles=ls(libpath+"/*.bin");
+    for i=1:size(binfiles,"*")
+        mdelete(binfiles(i));
+    end
+    mdelete(libpath+"/names");
+    mdelete(libpath+"/lib");
+endfunction
+cleanmacros();
+clear cleanmacros;

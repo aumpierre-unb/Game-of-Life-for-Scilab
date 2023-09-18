@@ -33,7 +33,7 @@ function [B]=conway(A,cyc,fig)
     //  each of which is in either live or dead.
     // Each cell will be live or dead
     //  in the next generation according to
-    //  the rules of the Conway's game of life:
+    //  the rules of the game of life of Conway:
     // 1) A live cells with exactly 2 or 3 live neighbors
     //  stays a live cell, otherwise it dies.
     // 2) A dead cell with 3 live neighbors

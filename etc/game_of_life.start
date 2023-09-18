@@ -13,35 +13,30 @@
 // GNU General Public License along with this program.
 // It is also available at www.gnu.org/licenses/.
 
-mprintf("Start Game of Life of Conway\n");
+// game_of_life.start is part of
+// the game_of_life package for Scilab.
 
-if isdef("game_of_lifelib") then
-	warning("game_of_life library is already loaded");
-	return;
-end
-
-etc_tlbx  = get_absolute_file_path();
-etc_tlbx  = getshortpathname(etc_tlbx);
-root_tlbx = strncpy( etc_tlbx, length(etc_tlbx)-length("\etc\") );
-
-//Load  functions library
-// =============================================================================
-mprintf("\tLoad macros\n");
-pathmacros  = pathconvert( root_tlbx ) + "macros" + filesep();
-game_of_lifelib = lib(pathmacros);
-clear pathmacros;
-
-// Load and add help chapter
-// =============================================================================
-if or(getscilabmode() == ["NW";"STD"]) then
-	mprintf("\tLoad help\n");
-	path_addchapter = pathconvert(root_tlbx+"/jar");
-	if ( isdir(path_addchapter) <> [] ) then
-		add_help_chapter("Game of Life of Conway", path_addchapter, %F);
-		clear add_help_chapter;
-	end
-	clear path_addchapter;
-end
-
-clear root_tlbx;
-clear etc_tlbx;
+function toolbox_gameoflife=startModule()
+    toolbox_name="game_of_life";
+    toolbox_title="Game of Life of Conway";
+    mprintf("Start " + toolbox_title + "\n");
+    if isdef(toolbox_name)
+        warning("Toolbox "+toolbox_name+" is already loaded");
+        return;
+    end
+    etc_tlbx=get_absolute_file_path(toolbox_name+".start");
+    etc_tlbx=getshortpathname(etc_tlbx);
+    root_tlbx=strncpy(etc_tlbx,length(etc_tlbx)-length("\etc\"));
+    mprintf("\tLoad macros\n");
+    pathmacros=pathconvert(root_tlbx)+"macros"+filesep();
+    game_of_life=lib(pathmacros);
+    if or(getscilabmode()==["NW";"STD"])
+        mprintf("\tLoad help\n");
+        path_addchapter=pathconvert(root_tlbx+"/jar");
+        if isdir(path_addchapter)
+            add_help_chapter(toolbox_name,path_addchapter,%F);
+        end
+    end
+endfunction
+toolbox_gameoflife=startModule()
+clear startModule;

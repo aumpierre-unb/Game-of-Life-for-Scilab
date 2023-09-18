@@ -13,8 +13,28 @@
 // GNU General Public License along with this program.
 // It is also available at www.gnu.org/licenses/.
 
-// loader.sce is part of
+// unloader.sce is part of
 // the game_of_life package for Scilab.
 
-toolboxes(SCI+"/contrib");
-clear toolboxes build distrib_clean distrib_zip
+oldmode=mode();
+mode(-1);
+oldlines=lines()(2);
+lines(0);
+toolbox_name="game_of_life";
+try
+    fileQuit=get_absolute_file_path("unloader.sce")+"etc\"+toolbox_name+".quit";
+    if isfile(fileQuit) then
+        exec(fileQuit);
+    end
+catch
+    [errmsg,tmp,nline,func]=lasterror()
+    msg="%s: error on line #%d: ""%s""\n"
+    msg=msprintf(msg,func,nline,errmsg)
+    lines(oldlines)
+    mode(oldmode);
+    clear oldlines oldmode tmp nline func
+    error(msg);
+end
+lines(oldlines);
+mode(oldmode);
+clear oldlines oldmode;

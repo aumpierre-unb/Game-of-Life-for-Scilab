@@ -1,4 +1,4 @@
-# Conway's Game of Life
+# Game of Life of Conway
 
 [![DOI](https://zenodo.org/badge/576362494.svg)](https://zenodo.org/badge/latestdoi/576362494)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
@@ -30,9 +30,9 @@ https://zenodo.org/account/settings/github/repository/aumpierre-unb/Game-of-Life
 
 ---
 
-## The Conway's Game of Life
+## The Game of Life of Conway
 
-Conway's Game of Life computes the configuration of the next generation of a grid of square cells, each of which is in either live or dead. Each cell will be live or dead in the next generation according to two simple rules:
+Game of Life of Conway computes the configuration of the next generation of a grid of square cells, each of which is in either live or dead. Each cell will be live or dead in the next generation according to two simple rules:
 
 - A live cells with exactly 2 or 3 live neighbors stays a live cell, otherwise it dies.
 - A dead cell with 3 live neighbors becomes alive, otherwise is stays dead.
@@ -79,7 +79,7 @@ A=genzero(27,28,.26)
 
 `conway` computes the configuration of the next generation of a grid of square cells, each of which is in either live or dead.
 
-Each cell will be live or dead in the next generation according to the rules of the Conway's game of life:
+Each cell will be live or dead in the next generation according to the rules of the game of life of Conway:
 
 - A live cells with exactly 2 or 3 live neighbors stays a live cell, otherwise it dies.
 - A dead cell with 3 live neighbors becomes alive, otherwise is stays dead.
@@ -101,7 +101,7 @@ B=conway(A,%t,%t)
 
 ### `evolution`
 
-`evolution` computes the evolution of a grid of square cells according to the rules of the Conway's game of life.
+`evolution` computes the evolution of a grid of square cells according to the rules of the game of life of Conway.
 
 The computation will be interrupted if the grid comes to a stable configuration (including death of all cells).
 

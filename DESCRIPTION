@@ -1,10 +1,10 @@
 Toolbox: game_of_life
 
-Title: Conway's Game of Life for Scilab
+Title: Game of Life of Conway for Scilab
 
-Summary: A package of functions for the Conway's game of life
+Summary: A package of functions for the game of life of Conway
 
-Version: 0.1.3
+Version: 0.2.0
 
 Author: Alexandre Umpierre
 
@@ -22,9 +22,9 @@ ScilabVersion: >= 6.0
 
 Depends: 
 
-Date: 2023-04-05
+Date: 2023-09-17
 
 Description: This package provides a set of functions to
- compute and visualize the Conway's game of life.
+ compute and visualize the game of life of Conway.
  https://doi.org/10.5281/zenodo.7420301
  Enjoy!

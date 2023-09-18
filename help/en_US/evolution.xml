@@ -17,7 +17,7 @@
 
   <refnamediv>
     <refname>evolution</refname>
-    <refpurpose>Computes the evolution of a given grid according to the rules of the Conway's game of life</refpurpose>
+    <refpurpose>Computes the evolution of a given grid according to the rules of the game of life of Conway</refpurpose>
   </refnamediv>
 
 
@@ -65,10 +65,10 @@
 evolution computes the evolution of
 a grid of square cells
 according to the rules of
-the Conway's game of life.
+the game of life of Conway.
 The simulations will be interrupted
 if the grid comes to
-a stable configuration (including death).
+a stable configuration (including death of all cells).
 evolution is a main function of
 the game_of_life package for Scilab.
    </para>

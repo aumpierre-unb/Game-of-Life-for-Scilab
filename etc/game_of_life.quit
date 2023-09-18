@@ -15,3 +15,11 @@
 
 // game_of_life.quit is part of
 // the game_of_life package for Scilab.
+
+function quitModule()
+    etc_tlbx=get_absolute_file_path(toolbox_name+".quit");
+    etc_tlbx=getshortpathname(etc_tlbx);
+    root_tlbx=strncpy(etc_tlbx,length(etc_tlbx)-length("\etc\"));
+endfunction
+quitModule();
+clear quitModule;
